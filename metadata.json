@@ -1,0 +1,6 @@
+{
+  "name": "90s Retro Media Player",
+  "description": "A fully functional 90s Windows-style music player with a retro interface and local file playback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

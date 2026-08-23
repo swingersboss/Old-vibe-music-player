@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .win95-outset {
+    background-color: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+    box-shadow: inset -1px -1px #808080, inset 1px 1px #dfdfdf;
+  }
+  
+  .win95-outset:active:not(:disabled) {
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    box-shadow: inset -1px -1px #dfdfdf, inset 1px 1px #808080;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+
+  .win95-inset {
+    background-color: #ffffff;
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    box-shadow: inset 1px 1px #000000;
+  }
+}
+
+body {
+  font-family: "MS Sans Serif", "Tahoma", "Geneva", sans-serif;
+  background-color: #008080;
+  -webkit-font-smoothing: none;
+}
+
+/* Custom retro range slider */
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 12px;
+  background: #c0c0c0;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+  box-shadow: inset -1px -1px #808080, inset 1px 1px #dfdfdf;
+  cursor: pointer;
+  margin-top: -8px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #000000;
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
